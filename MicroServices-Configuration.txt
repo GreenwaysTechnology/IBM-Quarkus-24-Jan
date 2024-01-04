@@ -1,5 +1,23 @@
 			  Microservices/Distributed Configuration
 .....................................................................................
+Pattern:Cross cutting concerns:
+ The application may require some services which need not be part of application.
+
+Pattern: Microservice chassis
+1.Configuration
+2.Security
+3.Logging
+4.Monitoring-Health
+5.Metrics
+6.Tracing
+
+You have application applied Microservices architecture
+   Then you have to isloate app services 
+So that you can apply Microservices Chassis Pattern
+   if you want to external configuration the you can apply External.
+
+Pattern: Externalized configuration:
+
 
 MicroProfile Config Specification
 .....................................................................................
@@ -222,6 +240,8 @@ Lab:
  open command prompt: windows
 E:\session\IBM\2023\Oct\Quarkus\code-with-quarkus-config>SET message.greeting=Hello,Env Variable
 
+E:\session\IBM\2023\Oct\Quarkus\code-with-quarkus-config>quarkus dev
+
 package org.acme;
 
 import jakarta.ws.rs.GET;
@@ -278,7 +298,7 @@ code-with-quarkus-config
 
 .env file must contain variables which must be uppercase.
 
-MESSAGE_GREETING=Hello,From Env File
+GREETING_MESSAGE=Hello,From Env File
 
 Testing:
 http://localhost:8080/hello
@@ -403,7 +423,7 @@ There are many config sources available
 
 1.HashiCorp valut 
 2.Consul configurations
-3.Spring Cloud
+3.Spring Cloud Config
 etc...
 
 Steps:

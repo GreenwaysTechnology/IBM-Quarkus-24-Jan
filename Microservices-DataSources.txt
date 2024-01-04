@@ -1077,7 +1077,7 @@ public class CustomerResource {
             if (entity == null) {
                 throw new WebApplicationException("Customer with ID Of " + id + "does not  exits", 404);
             }
-            return Response.ok(entity).status(200).build();
+            	
         });
     }
 

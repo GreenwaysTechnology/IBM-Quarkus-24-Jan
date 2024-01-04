@@ -102,6 +102,7 @@ public interface HelloRestClientService {
 
 
 Step 3: Configuration in application.properties
+
 com.ibm.rest.client.HelloRestClientService/mp-rest/url=http://localhost:8080
 com.ibm.rest.client.HelloRestClientService/mp-rest/scope=javax.inject.Singleton
 
@@ -345,7 +346,9 @@ public class GreetingResource {
 			Service Communication via Messages
 		(Event Driven Microservices using Vertx Event Bus)
 		
-
+Event Sourcing/Domain Events:
+ -EVENT BUS
+ -Quarkus Reactive Streams - via message brokers -Kafka.
 
 how to build loosly coupled microservices?
 
