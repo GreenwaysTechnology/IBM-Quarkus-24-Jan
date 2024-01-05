@@ -662,6 +662,26 @@ pom.xml:
             <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
         </dependency>
 
+
+EventSourcing with Kafka and database:
+
+Use Case:
+ Inventory Management use case.
+
+if you add new product , if product exits, just update the quantity else add new one 
+
+=>Add Stock/product
+  if product exits, just increment the quanity or add new product   
+=>Remove Stock/Product
+  if product exits, just decrement the quanity 
+
+eg:
+ product Name , Iphone , qty 10, addedBy
+
+When ever a biz transaction happens , you can trigger event and store into kafka.
+
+
+
 Steps:
 1.Producer :
 
